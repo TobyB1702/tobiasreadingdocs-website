@@ -1,18 +1,11 @@
 import { useState } from 'react';
 import {
-  IconCalendarStats,
-  IconDeviceDesktopAnalytics,
-  IconFingerprint,
-  IconGauge,
   IconHome2,
-  IconLogout,
-  IconSettings,
-  IconSwitchHorizontal,
-  IconUser,
 } from '@tabler/icons-react';
 import { Center, Stack, Tooltip, UnstyledButton } from '@mantine/core';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './NavbarMinimalColored.module.css';
+import myLogo from '../../assets/logo.png';
 
 interface NavbarLinkProps {
   icon: typeof IconHome2;
@@ -25,7 +18,7 @@ function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
   return (
     <Tooltip label={label} position="right" transitionProps={{ duration: 0 }}>
       <UnstyledButton onClick={onClick} className={classes.link} data-active={active || undefined}>
-        <Icon size={20} stroke={1.5} />
+        <Icon size={20} stroke={1.5} color="#1f1f1f" />
       </UnstyledButton>
     </Tooltip>
   );
@@ -49,16 +42,13 @@ export function NavbarMinimalColored() {
 
   return (
     <nav className={classes.navbar}>
-      <Center>
-        <MantineLogo type="mark" inverted size={30} />
-      </Center>
-
-      <div className={classes.navbarMain}>
-        <Stack justify="center" gap={0}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 24 }}>
+        <img src={myLogo} alt="Logo" style={{ width: 90, height: 90, borderRadius: '16px' }} />
+        <Stack justify="center" gap={0} style={{ marginTop: 24 }}>
           {links}
         </Stack>
       </div>
-
+      {/* ...other navbar sections if needed... */}
     </nav>
   );
 }

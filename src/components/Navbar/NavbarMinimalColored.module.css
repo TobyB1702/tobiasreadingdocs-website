@@ -1,10 +1,14 @@
 .navbar {
-  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110px;
   height: 100vh;
   padding: var(--mantine-spacing-md);
   display: flex;
   flex-direction: column;
-  background-color: var(--mantine-color-blue-filled);
+  background-color: var(--mantine-color-dark-filled);
+  z-index: 100; /* Ensure it stays above page content */
 }
 
 .navbarMain {
@@ -22,18 +26,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--mantine-color-white);
+  background-color: var(--mantine-color-white); /* Always white */
+  color: var(--mantine-color-blue-6); /* Or your preferred icon color */
+  box-shadow: var(--mantine-shadow-sm);
+  transition: background 0.2s, color 0.2s;
+}
 
-  &:hover {
-    background-color: var(--mantine-color-blue-7);
-  }
+.link:hover {
+  background-color: var(--mantine-color-white); /* Still white on hover */
+  color: var(--mantine-color-blue-7); /* Optional: slightly different on hover */
+}
 
-  &[data-active] {
-    &,
-    &:hover {
-      box-shadow: var(--mantine-shadow-sm);
-      background-color: var(--mantine-color-white);
-      color: var(--mantine-color-blue-6);
-    }
-  }
+.link[data-active] {
+  background-color: var(--mantine-color-white); /* Always white */
+  color: var(--mantine-color-blue-6);
 }
