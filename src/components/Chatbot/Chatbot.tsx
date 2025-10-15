@@ -99,6 +99,7 @@ export function Chatbot(props: TextInputProps) {
           style={{ marginBottom: 32, maxHeight: 200, overflowY: 'auto' }}
         />
         <TextInput
+          id="yobi-textbox"
           radius="xl"
           size="md"
           placeholder="Ask Yobi anything!"
