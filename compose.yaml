@@ -1,0 +1,18 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tobiasreadingdocs-website:latest
+    ports:
+      # map container nginx (80) to host 5173 so it matches your dev environment URL
+      - "5173:5173"
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge

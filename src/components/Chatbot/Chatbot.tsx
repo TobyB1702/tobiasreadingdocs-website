@@ -33,9 +33,10 @@ export function Chatbot(props: TextInputProps) {
     }
     setResponse('');
     setLoading(true); // Set loading to true
+    const BACKEND_URL = (import.meta.env.VITE_BACKEND_URL);
 
     const encodedQuery = encodeURIComponent(input.trim());
-    const url = `http://localhost:8000/chat/chat_with_yobi?query=${encodedQuery}`;
+    const url = `${BACKEND_URL}/chat/chat_with_yobi?query=${encodedQuery}`;
 
     const es = new EventSource(url);
     eventSourceRef.current = es;
