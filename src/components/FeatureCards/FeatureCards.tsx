@@ -15,21 +15,21 @@ const mockdata = [
   {
     title: 'LLM Daily Facts',
     description:
-      'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit',
+      'This fun project generates daily facts using a large language model (LLM) and shares via email to subscribers, its currently got 15 users! It was a warm up project to get use to full cloud procress',
     icon: IconMessageCog,
     color: '#2e2e2e',
   },
   {
     title: 'MCP News Updates',
     description:
-      'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
+      'A more advance project that uses docker, azure function app and mcp server connected to a free news API. Which gives daily news updates on AI and Visa news!',
     icon: IconNews,
     color: '#2e2e2e',
   },
   {
     title: 'Personal Assistant, Yobi',
     description:
-      'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
+      'My personal favourite project, Yobi is a personal chatbot that give information about myself, it also uses MCP and can access my data and the news api aswell.',
     icon: IconRobot,
     color: '#2e2e2e',
   },

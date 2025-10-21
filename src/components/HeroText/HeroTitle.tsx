@@ -7,16 +7,14 @@ export function HeroTitle() {
     <div className={classes.wrapper}>
       <Container size={700} className={classes.inner}>
 <h1 className={classes.title}>
-  Welcome To{' '}
   <Text component="span" inherit style={{ color: '#2e2e2e', fontWeight: 700 }}>
-    Toby Bell's
+      human-toby.org
   </Text>{' '}
-  Personal Website!
+
 </h1>
 
         <Text className={classes.description} color="dimmed">
-          Build fully functional accessible web applications with ease – Mantine includes more than
-          100 customizable components and hooks to cover you in any situation
+          Hello and welcome to my personal website! My name is Toby, and I'm a data scientist from the UK. Here, you'll find a few of my personal projects!
         </Text>
 
         <Group className={classes.controls}>
