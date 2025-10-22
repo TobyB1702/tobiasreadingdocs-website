@@ -5,8 +5,7 @@ services:
       dockerfile: Dockerfile
     image: tobiasreadingdocs-website:latest
     ports:
-      # map container nginx (80) to host 5173 so it matches your dev environment URL
-      - "5173:5173"
+      - "80:80"
     env_file:
       - .env
     restart: unless-stopped

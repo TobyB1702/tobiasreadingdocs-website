@@ -15,14 +15,14 @@ const mockdata = [
   {
     title: 'LLM Daily Facts',
     description:
-      'This fun project generates daily facts using a large language model (LLM) and shares via email to subscribers, its currently got 15 users! It was a warm up project to get use to full cloud procress',
+      'This fun project generates daily facts using a large language model (LLM) and shares via email to subscribers, its currently got 15 users! It was a warm up project to get use to full cloud process',
     icon: IconMessageCog,
     color: '#2e2e2e',
   },
   {
     title: 'MCP News Updates',
     description:
-      'A more advance project that uses docker, azure function app and mcp server connected to a free news API. Which gives daily news updates on AI and Visa news!',
+      'A more advanced project that uses docker, azure function app and a mcp server connected to a free news API. Which gives daily news updates on AI and Visa news!',
     icon: IconNews,
     color: '#2e2e2e',
   },
